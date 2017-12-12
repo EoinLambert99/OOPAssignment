@@ -10,6 +10,7 @@ class Radar
   float frequency;
   color c;
   
+  //this references the radadr object
   Radar(float cx, float cy, float radius, float frequency, color c)
   {
     this.cx = cx;
@@ -21,6 +22,7 @@ class Radar
     this.c = c;
   }
   
+  //keep the line rotating at a constant speed
   void update()
   {
     theta += speed;
