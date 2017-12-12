@@ -14,5 +14,5 @@ use the 'UP' and 'DOWN' keys to increase the speed of the stars flying past the 
 When you click on the window in the sketch it shoots a bullet out to where the mouse was pointing to. If you click on the circle under the window it changes the colour o the window to the colour that is in the sqaure underneath it which changes everytime there is a mouse click. 
 
 ### YouTube Video
-    [![YouTube](https://youtu.be/uHA-c4-ktHs)](https://youtu.be/uHA-c4-ktHs)
+ [![Assignment](https://youtu.be/uHA-c4-ktHs)](https://youtu.be/uHA-c4-ktHs)
 
