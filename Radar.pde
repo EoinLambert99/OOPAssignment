@@ -1,3 +1,6 @@
+//create the class radar that displaays the radar n the bottom 
+//right corner of the screen
+
 class Radar
 {
   float cx, cy;
