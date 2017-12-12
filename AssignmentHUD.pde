@@ -82,7 +82,7 @@ void draw()
       
     if(keyCode == DOWN)
     {
-       barHeight = barHeight - 0.5;
+       //barHeight = barHeight - 0.5;
        speed = speed - 2; 
         if (speed == 0)
         {
