@@ -37,8 +37,11 @@ void draw()
     vertex(25, 550);
     vertex(25,250);
   endShape();
+   
+      show(); 
     
   pushMatrix();
+    
   translate(width/2, height/2);
   for(int i = 0; i < stars.length; i++)
   {
@@ -74,26 +77,26 @@ void draw()
   rectMode(CENTER);
   noStroke();
   
-  if (clicked)
-  {
-    fill(0);
-  }
-  else
-  {
-    fill(0);
-  }
-  
-  rect(600,800, buttonWidth, buttonHeight);
-    
 }
 
-void mousePressed()
-{
-  float tlx = 600 - buttonWidth / 2;
-  float tly = 800 - buttonHeight / 2;
-  if (mouseX > tlx && mouseX < tlx + buttonWidth && mouseY > tly && mouseY < tly + buttonHeight)
-    {
-      clicked = true;
-      background(20);
-    }
+ void show(){
+    
+      float xpos = 100;
+      float ypos = 850;
+      float barWidth= 30;
+      float barHeight = -100;
+      stroke(0,255,0);
+      fill(0,255,0);
+     
+      for(int i = 0 ; i < 200 ; i+=50)
+       {
+        float number =  25;
+        
+        rect(xpos + i, 800, barWidth, barHeight - number);
+         
+       }
+               //rect(xpos , ypos, barWidth, barHeight );
+
+       // rect(100,800, 200, 400);
+ 
 }

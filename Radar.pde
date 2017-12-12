@@ -33,7 +33,7 @@ class Radar
     ellipse(cx, cy, radius * 2, radius * 2);
     ellipse(cx, cy, radius + 30, radius + 30);
     ellipse(cx, cy, radius - 30, radius - 30);
-  
+   
     line(850,750,850, 950);
     line(750,850, 950, 850 );
     
@@ -47,6 +47,24 @@ class Radar
       float y = cy -cos(theta + i * speed) * radius;
       line(cx, cy, x, y);
     }
+     
+    float c = 10;
+    float d = 20;
+     
+    noStroke();
+    fill(0,255,255);
+    ellipse(875, 775, c,c);
+    ellipse(845, 825, d, d);
+
+    
+
+    if(frameCount % 120 == 0)
+    {
+     c = c + 10;
+     d = d + 15;
+     ellipse(875, 775, c,c);
+     ellipse(845, 825, d,d);
+    }
     
     fill(0);
     rect(800, 970, 100,30);
@@ -54,7 +72,31 @@ class Radar
     fill(255);
     textAlign(LEFT, TOP);
     text("Radar", 750, 970);
+    
+    if (clicked)
+  {
+    fill(255);
+  }
+  else
+  {
+    fill(0);
+  }
+  
+  rect(600,800, buttonWidth, buttonHeight);
+    
+}
+
+void mousePressed()
+{
+  float tlx = 600 - buttonWidth / 2;
+  float tly = 800 - buttonHeight / 2;
+  if (mouseX > tlx && mouseX < tlx + buttonWidth && mouseY > tly && mouseY < tly + buttonHeight)
+    {
+      clicked = true;
+      background(20);
+    }
+}
 
     
-  }
+  
 }
