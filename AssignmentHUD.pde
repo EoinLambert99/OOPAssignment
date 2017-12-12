@@ -82,7 +82,7 @@ void draw()
       
     if(keyCode == DOWN)
     {
-       //barHeight = barHeight - 0.5;
+       barHeight = barHeight - 0.5;
        speed = speed - 2; 
         if (speed == 0)
         {
@@ -153,7 +153,7 @@ float barHeight = -100;
        textSize(13);
     fill(0);
     textAlign(CENTER);
-    text("Fuel Tanks:", 100, 960 );
+    text("Power Consumption:", 100, 960 );
               
        stroke(0);
        noFill();
