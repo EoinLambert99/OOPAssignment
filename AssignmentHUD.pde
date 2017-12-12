@@ -1,4 +1,14 @@
-Star[] stars = new Star[1000];
+//OOP Assignment by Eoin Lambert
+//C16362513 DT228/2
+//Assignment to create a Sci-Fi HUD
+//i created a star field with a radar and dynamic bar charts
+
+
+
+
+
+
+Star[] stars = new Star[2000];
 String[] Galaxy = {"Tatooine", "Mustafar", "Naboo", "Endor", "Galactic Senate"};
 color[] colors = new color[12];
 
@@ -152,7 +162,7 @@ float barHeight = -100;
        
        textSize(13);
     fill(0);
-    textAlign(CENTER);
+    textAlign(LEFT);
     text("Power Consumption:", 100, 960 );
               
        stroke(0);
