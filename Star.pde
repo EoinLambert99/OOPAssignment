@@ -26,7 +26,7 @@ class Star {
   }
   
   void show(){
-    fill(255);
+    fill(150);
     noStroke();
     
     float sx = map (x/z, 0, 1, 0, width);
@@ -41,9 +41,7 @@ class Star {
     pz = z;
     stroke(150);
     line(px, py, sx, sy);
-    
-  
-    
+     
   }
  
 }
